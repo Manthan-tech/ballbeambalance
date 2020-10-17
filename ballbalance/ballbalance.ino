@@ -1,10 +1,10 @@
 #include <Servo.h>
 Servo manthanservo;
 int sp=9;
-int trigPin = 11;    // Trigger
-int echoPin = 12;    // Echo
+int trigPin = 5;    // Trigger
+int echoPin = 6;    // Echo
 long duration, cm, inches;
-int lastcm=24;
+int lastcm=20;
 int pos=72;
 
 
