@@ -23,7 +23,7 @@ double cumError, rateError;
  
 void setup() {
  
-  Serial.begin (9600);
+  Serial.begin (10500);
   
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
@@ -34,7 +34,7 @@ void loop() {
   digitalWrite(trigPin, LOW);
   delayMicroseconds(5);
   digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
+  delayMicroseconds(6);
   digitalWrite(trigPin, LOW);
  
  
@@ -49,7 +49,7 @@ void loop() {
   int disp=lastcm-cm;
   if(disp<0)
   disp=-disp;
-  if(cm>45)
+  if(cm>46)
   cm=24;
   Serial.print(cm);
   Serial.print(" cm ");
